@@ -1,301 +1,761 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="style.css">
-    <style>
-       .parent-container {
-            display: flex;
-            overflow-x: auto; /* Enable horizontal scrolling for the parent container */
-            max-width: 95%;
-            margin: auto; /* Allow the parent container to take the full width */
-        }
-
-        .column {
-            background-color:aliceblue;
-            flex-shrink: 0; /* Prevent columns from shrinking */
-            width: 400px; /* Adjust the width as needed */
-            margin-right: 20px; /* Adjust the margin between columns as needed */
-            overflow-y: auto; /* Enable vertical scrolling for each column */
-            max-height: 600px; /* Set a maximum height for each column */
-            border: 1px solid #ccc; /* Optional: Add border for visual separation */
-            
-        }
-        
-        .card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .profile {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        .profile img {
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-        }
-        .profile-elements {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .card-body {
-            background-color: white;
-            border-radius: 5px;
-            padding: 8px;
-            margin-top: 15px;
-            margin-left: 5px;
-            margin-right: 5px;
-        }
-        .body-element {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            
-        }
-        .body-element div {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .clipboard {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color:aliceblue;
-            padding-right: 5px;
-            padding-left: 5px;
-            height: 40px;
-        }
-
-        .footer-body {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            
-        }
-
-        .footer-body img{
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-        }
-        .chat, .date {
-            display: flex;
-            align-items: center;
-        }
-        button {
-            display: flex;
-            align-items: center;
-            border: none;
-            height: 30px;
-            border-radius: 5px;
-        }
-        .count {
-            background-color: aliceblue;
-            border-radius: 50%;
-            height: 35px;
-            width: 35px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
-</head>
-<body>
-
-<div class="parent-container">
-    <div class="column">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="parent-container">
+        <!-- First Column -->
+      <div class="column">
         <div class="card-header">
-            <h1 style="margin-left: 5px;">Incomplete</h1>
-            <h1 style="background-color: white; padding: 4px; margin-right: 5px;">0</h1>
+          <h1 style="margin-left: 5px">Incomplete</h1>
+          <h1 style="background-color: white; padding: 4px; margin-right: 5px">
+            0
+          </h1>
         </div>
         <div class="card-body">
-            <div class="profile-elements">
-                    <div class="profile">
-                        <img src="https://pikwizard.com/pw/small/39573f81d4d58261e5e1ed8f1ff890f6.jpg" alt="">
-                        <p>John Doe</p>
-                    </div>
-                    <div class="profile">
-                        <img src="https://i.pinimg.com/originals/9f/74/53/9f74535608abc523efe3eb37a9a30a54.jpg" alt="">
-                        <p> Edge man</p>    
-                    </div>
+          <div class="profile-elements">
+            <div class="profile">
+              <img
+                src="https://pikwizard.com/pw/small/39573f81d4d58261e5e1ed8f1ff890f6.jpg"
+                alt=""
+              />
+              <p>John Doe</p>
             </div>
-            <div class="body-element">
-                
-                    <div>
-                        <span class="material-symbols-outlined">
-                        backup_table
-                        </span>
-                        <p>Lorem ipsum dolor sit amet fgfgf</p>
-                    </div>
-                    <div class="clipboard">
-                        <span class="material-symbols-outlined">
-                            assignment
-                            </span>
-                            <p>1/2</p>
-                    </div>
+            <div class="profile">
+              <img
+                src="https://i.pinimg.com/originals/9f/74/53/9f74535608abc523efe3eb37a9a30a54.jpg"
+                alt=""
+              />
+              <p>Edge man</p>
             </div>
+          </div>
+          <div class="body-element">
+            <div>
+              <span class="material-symbols-outlined"> backup_table </span>
+              <p>Lorem ipsum dolor sit amet fgfgf</p>
+            </div>
+            <div class="clipboard">
+              <span class="material-symbols-outlined"> assignment </span>
+              <p>1/2</p>
+            </div>
+          </div>
 
-            <div class="card-footer">
-                <div class="footer-body">
-                    <img src="https://pikwizard.com/pw/small/8390a9c27654fdd710128ec3a9d0c800.jpg" alt="">
-                    <img src="https://i.pinimg.com/originals/26/36/71/263671e8474b286effee5331484ad52a.jpg" alt="">
-                    <div class="count">
-                        <p>12+</p>
-                    </div>
-                    <div class="chat">
-                        <span class="material-symbols-outlined">
-                            3p
-                            </span>
-                            <p>15</p>
-                    </div>
-                    <button>
-                        <span class="material-symbols-outlined">
-                            attach_file
-                            </span>
-                        
-                            <p>12</p>
-                        
-                    </button>
-                    <div class="date">
-                        <span class="material-symbols-outlined">
-                            calendar_month
-                            </span>
-                        <p>30/12/2021</p>
-                    </div>
-                </div>
+          <div class="card-footer">
+            <div class="footer-body">
+              <img
+                src="https://pikwizard.com/pw/small/8390a9c27654fdd710128ec3a9d0c800.jpg"
+                alt=""
+              />
+              <img
+                src="https://i.pinimg.com/originals/26/36/71/263671e8474b286effee5331484ad52a.jpg"
+                alt=""
+              />
+              <div class="count">
+                <p>12+</p>
+              </div>
+              <div class="chat">
+                <span class="material-symbols-outlined"> 3p </span>
+                <p>15</p>
+              </div>
+              <button onclick="openModal()">
+                <span class="material-symbols-outlined"> attach_file </span>
+
+                <p class="attach-files">12</p>
+              </button>
+              <div class="date">
+                <span class="material-symbols-outlined"> calendar_month </span>
+                <p>30/12/2021</p>
+              </div>
             </div>
+          </div>
         </div>
-
-  
 
         <div class="card-body">
-            <div class="profile-elements">
-                    <div class="profile">
-                        <img src="https://pikwizard.com/pw/small/39573f81d4d58261e5e1ed8f1ff890f6.jpg" alt="">
-                        <p>John Doe</p>
-                    </div>
-                    <div class="profile">
-                        <img src="https://i.pinimg.com/originals/9f/74/53/9f74535608abc523efe3eb37a9a30a54.jpg" alt="">
-                        <p> Edge man</p>    
-                    </div>
+          <div class="profile-elements">
+            <div class="profile">
+              <img
+                src="https://pikwizard.com/pw/small/39573f81d4d58261e5e1ed8f1ff890f6.jpg"
+                alt=""
+              />
+              <p>John Doe</p>
             </div>
-            <div class="body-element">
-                
-                    <div>
-                        <span class="material-symbols-outlined">
-                        backup_table
-                        </span>
-                        <p>Lorem ipsum dolor sit amet fgfgf</p>
-                    </div>
-                    <div class="clipboard">
-                        <span class="material-symbols-outlined">
-                            assignment
-                            </span>
-                            <p>1/2</p>
-                    </div>
+            <div class="profile">
+              <img
+                src="https://i.pinimg.com/originals/9f/74/53/9f74535608abc523efe3eb37a9a30a54.jpg"
+                alt=""
+              />
+              <p>Edge man</p>
             </div>
+          </div>
+          <div class="body-element">
+            <div>
+              <span class="material-symbols-outlined"> backup_table </span>
+              <p>Lorem ipsum dolor sit amet fgfgf</p>
+            </div>
+            <div class="clipboard">
+              <span class="material-symbols-outlined"> assignment </span>
+              <p>1/2</p>
+            </div>
+          </div>
 
-            <div class="card-footer">
-                <div class="footer-body">
-                    <img src="https://pikwizard.com/pw/small/8390a9c27654fdd710128ec3a9d0c800.jpg" alt="">
-                    <img src="https://i.pinimg.com/originals/26/36/71/263671e8474b286effee5331484ad52a.jpg" alt="">
-                    <div class="count">
-                        <p>12+</p>
-                    </div>
-                    <div class="chat">
-                        <span class="material-symbols-outlined">
-                            3p
-                            </span>
-                            <p>15</p>
-                    </div>
-                    <button>
-                        <span class="material-symbols-outlined">
-                            attach_file
-                            </span>
-                        
-                            <p>12</p>
-                        
-                    </button>
-                    <div class="date">
-                        <span class="material-symbols-outlined">
-                            calendar_month
-                            </span>
-                        <p>30/12/2021</p>
-                    </div>
-                </div>
+          <div class="card-footer">
+            <div class="footer-body">
+              <img
+                src="https://pikwizard.com/pw/small/8390a9c27654fdd710128ec3a9d0c800.jpg"
+                alt=""
+              />
+              <img
+                src="https://i.pinimg.com/originals/26/36/71/263671e8474b286effee5331484ad52a.jpg"
+                alt=""
+              />
+              <div class="count">
+                <p>12+</p>
+              </div>
+              <div class="chat">
+                <span class="material-symbols-outlined"> 3p </span>
+                <p>15</p>
+              </div>
+              <button onclick="openModal()">
+                <span class="material-symbols-outlined"> attach_file </span>
+
+                <p class="attach-files">12</p>
+              </button>
+              <div class="date">
+                <span class="material-symbols-outlined"> calendar_month </span>
+                <p>30/12/2021</p>
+              </div>
             </div>
+          </div>
         </div>
-
 
         <div class="card-body">
-            <div class="profile-elements">
-                    <div class="profile">
-                        <img src="https://pikwizard.com/pw/small/39573f81d4d58261e5e1ed8f1ff890f6.jpg" alt="">
-                        <p>John Doe</p>
-                    </div>
-                    <div class="profile">
-                        <img src="https://i.pinimg.com/originals/9f/74/53/9f74535608abc523efe3eb37a9a30a54.jpg" alt="">
-                        <p> Edge man</p>    
-                    </div>
+          <div class="profile-elements">
+            <div class="profile">
+              <img
+                src="https://pikwizard.com/pw/small/39573f81d4d58261e5e1ed8f1ff890f6.jpg"
+                alt=""
+              />
+              <p>John Doe</p>
             </div>
-            <div class="body-element">
-                
-                    <div>
-                        <span class="material-symbols-outlined">
-                        backup_table
-                        </span>
-                        <p>Lorem ipsum dolor sit amet fgfgf</p>
-                    </div>
-                    <div class="clipboard">
-                        <span class="material-symbols-outlined">
-                            assignment
-                            </span>
-                            <p>1/2</p>
-                    </div>
+            <div class="profile">
+              <img
+                src="https://i.pinimg.com/originals/9f/74/53/9f74535608abc523efe3eb37a9a30a54.jpg"
+                alt=""
+              />
+              <p>Edge man</p>
             </div>
+          </div>
+          <div class="body-element">
+            <div>
+              <span class="material-symbols-outlined"> backup_table </span>
+              <p>Lorem ipsum dolor sit amet fgfgf</p>
+            </div>
+            <div class="clipboard">
+              <span class="material-symbols-outlined"> assignment </span>
+              <p>1/2</p>
+            </div>
+          </div>
 
-            <div class="card-footer">
-                <div class="footer-body">
-                    <img src="https://pikwizard.com/pw/small/8390a9c27654fdd710128ec3a9d0c800.jpg" alt="">
-                    <img src="https://i.pinimg.com/originals/26/36/71/263671e8474b286effee5331484ad52a.jpg" alt="">
-                    <div class="count">
-                        <p>12+</p>
-                    </div>
-                    <div class="chat">
-                        <span class="material-symbols-outlined">
-                            3p
-                            </span>
-                            <p>15</p>
-                    </div>
-                    <button>
-                        <span class="material-symbols-outlined">
-                            attach_file
-                            </span>
-                        
-                            <p>12</p>
-                        
-                    </button>
-                    <div class="date">
-                        <span class="material-symbols-outlined">
-                            calendar_month
-                            </span>
-                        <p>30/12/2021</p>
-                    </div>
-                </div>
+          <div class="card-footer">
+            <div class="footer-body">
+              <img
+                src="https://pikwizard.com/pw/small/8390a9c27654fdd710128ec3a9d0c800.jpg"
+                alt=""
+              />
+              <img
+                src="https://i.pinimg.com/originals/26/36/71/263671e8474b286effee5331484ad52a.jpg"
+                alt=""
+              />
+              <div class="count">
+                <p>12+</p>
+              </div>
+              <div class="chat">
+                <span class="material-symbols-outlined"> 3p </span>
+                <p>15</p>
+              </div>
+              <button onclick="openModal()">
+                <span class="material-symbols-outlined"> attach_file </span>
+                <p class="attach-files">12</p>
+            </button>
+              <div class="date">
+                <span class="material-symbols-outlined"> calendar_month </span>
+                <p>30/12/2021</p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+      <!-- Second Column -->
+      <div class="column">
+        <div class="card-header">
+          <h1 style="margin-left: 5px">Todo</h1>
+          <h1 style="background-color: white; padding: 4px; margin-right: 5px">
+            0
+          </h1>
         </div>
-   
+        <div class="card-body">
+          <div class="profile-elements">
+            <div class="profile">
+              <img
+                src="https://pikwizard.com/pw/small/39573f81d4d58261e5e1ed8f1ff890f6.jpg"
+                alt=""
+              />
+              <p>John Doe</p>
+            </div>
+            <div class="profile">
+              <img
+                src="https://i.pinimg.com/originals/9f/74/53/9f74535608abc523efe3eb37a9a30a54.jpg"
+                alt=""
+              />
+              <p>Edge man</p>
+            </div>
+          </div>
+          <div class="body-element">
+            <div>
+              <span class="material-symbols-outlined"> backup_table </span>
+              <p>Lorem ipsum dolor sit amet fgfgf</p>
+            </div>
+            <div class="clipboard">
+              <span class="material-symbols-outlined"> assignment </span>
+              <p>1/2</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="footer-body">
+              <img
+                src="https://pikwizard.com/pw/small/8390a9c27654fdd710128ec3a9d0c800.jpg"
+                alt=""
+              />
+              <img
+                src="https://i.pinimg.com/originals/26/36/71/263671e8474b286effee5331484ad52a.jpg"
+                alt=""
+              />
+              <div class="count">
+                <p>12+</p>
+              </div>
+              <div class="chat">
+                <span class="material-symbols-outlined"> 3p </span>
+                <p>15</p>
+              </div>
+              <button onclick="openModal()">
+                <span class="material-symbols-outlined"> attach_file </span>
+
+                <p class="attach-files">12</p>
+              </button>
+              <div class="date">
+                <span class="material-symbols-outlined"> calendar_month </span>
+                <p>30/12/2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="profile-elements">
+            <div class="profile">
+              <img
+                src="https://pikwizard.com/pw/small/39573f81d4d58261e5e1ed8f1ff890f6.jpg"
+                alt=""
+              />
+              <p>John Doe</p>
+            </div>
+            <div class="profile">
+              <img
+                src="https://i.pinimg.com/originals/9f/74/53/9f74535608abc523efe3eb37a9a30a54.jpg"
+                alt=""
+              />
+              <p>Edge man</p>
+            </div>
+          </div>
+          <div class="body-element">
+            <div>
+              <span class="material-symbols-outlined"> backup_table </span>
+              <p>Lorem ipsum dolor sit amet fgfgf</p>
+            </div>
+            <div class="clipboard">
+              <span class="material-symbols-outlined"> assignment </span>
+              <p>1/2</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="footer-body">
+              <img
+                src="https://pikwizard.com/pw/small/8390a9c27654fdd710128ec3a9d0c800.jpg"
+                alt=""
+              />
+              <img
+                src="https://i.pinimg.com/originals/26/36/71/263671e8474b286effee5331484ad52a.jpg"
+                alt=""
+              />
+              <div class="count">
+                <p>12+</p>
+              </div>
+              <div class="chat">
+                <span class="material-symbols-outlined"> 3p </span>
+                <p>15</p>
+              </div>
+              <button onclick="openModal()">
+                <span class="material-symbols-outlined"> attach_file </span>
+
+                <p class="attach-files">12</p>
+              </button>
+              <div class="date">
+                <span class="material-symbols-outlined"> calendar_month </span>
+                <p>30/12/2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="profile-elements">
+            <div class="profile">
+              <img
+                src="https://pikwizard.com/pw/small/39573f81d4d58261e5e1ed8f1ff890f6.jpg"
+                alt=""
+              />
+              <p>John Doe</p>
+            </div>
+            <div class="profile">
+              <img
+                src="https://i.pinimg.com/originals/9f/74/53/9f74535608abc523efe3eb37a9a30a54.jpg"
+                alt=""
+              />
+              <p>Edge man</p>
+            </div>
+          </div>
+          <div class="body-element">
+            <div>
+              <span class="material-symbols-outlined"> backup_table </span>
+              <p>Lorem ipsum dolor sit amet fgfgf</p>
+            </div>
+            <div class="clipboard">
+              <span class="material-symbols-outlined"> assignment </span>
+              <p>1/2</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="footer-body">
+              <img
+                src="https://pikwizard.com/pw/small/8390a9c27654fdd710128ec3a9d0c800.jpg"
+                alt=""
+              />
+              <img
+                src="https://i.pinimg.com/originals/26/36/71/263671e8474b286effee5331484ad52a.jpg"
+                alt=""
+              />
+              <div class="count">
+                <p>12+</p>
+              </div>
+              <div class="chat">
+                <span class="material-symbols-outlined"> 3p </span>
+                <p>15</p>
+              </div>
+              <button onclick="openModal()">
+                <span class="material-symbols-outlined"> attach_file </span>
+                <p class="attach-files">12</p>
+            </button>
+              <div class="date">
+                <span class="material-symbols-outlined"> calendar_month </span>
+                <p>30/12/2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Third Column -->
+      <div class="column">
+        <div class="card-header">
+          <h1 style="margin-left: 5px">Doing</h1>
+          <h1 style="background-color: white; padding: 4px; margin-right: 5px">
+            0
+          </h1>
+        </div>
+        <div class="card-body">
+          <div class="profile-elements">
+            <div class="profile">
+              <img
+                src="https://pikwizard.com/pw/small/39573f81d4d58261e5e1ed8f1ff890f6.jpg"
+                alt=""
+              />
+              <p>John Doe</p>
+            </div>
+            <div class="profile">
+              <img
+                src="https://i.pinimg.com/originals/9f/74/53/9f74535608abc523efe3eb37a9a30a54.jpg"
+                alt=""
+              />
+              <p>Edge man</p>
+            </div>
+          </div>
+          <div class="body-element">
+            <div>
+              <span class="material-symbols-outlined"> backup_table </span>
+              <p>Lorem ipsum dolor sit amet fgfgf</p>
+            </div>
+            <div class="clipboard">
+              <span class="material-symbols-outlined"> assignment </span>
+              <p>1/2</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="footer-body">
+              <img
+                src="https://pikwizard.com/pw/small/8390a9c27654fdd710128ec3a9d0c800.jpg"
+                alt=""
+              />
+              <img
+                src="https://i.pinimg.com/originals/26/36/71/263671e8474b286effee5331484ad52a.jpg"
+                alt=""
+              />
+              <div class="count">
+                <p>12+</p>
+              </div>
+              <div class="chat">
+                <span class="material-symbols-outlined"> 3p </span>
+                <p>15</p>
+              </div>
+              <button onclick="openModal()">
+                <span class="material-symbols-outlined"> attach_file </span>
+
+                <p class="attach-files">12</p>
+              </button>
+              <div class="date">
+                <span class="material-symbols-outlined"> calendar_month </span>
+                <p>30/12/2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="profile-elements">
+            <div class="profile">
+              <img
+                src="https://pikwizard.com/pw/small/39573f81d4d58261e5e1ed8f1ff890f6.jpg"
+                alt=""
+              />
+              <p>John Doe</p>
+            </div>
+            <div class="profile">
+              <img
+                src="https://i.pinimg.com/originals/9f/74/53/9f74535608abc523efe3eb37a9a30a54.jpg"
+                alt=""
+              />
+              <p>Edge man</p>
+            </div>
+          </div>
+          <div class="body-element">
+            <div>
+              <span class="material-symbols-outlined"> backup_table </span>
+              <p>Lorem ipsum dolor sit amet fgfgf</p>
+            </div>
+            <div class="clipboard">
+              <span class="material-symbols-outlined"> assignment </span>
+              <p>1/2</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="footer-body">
+              <img
+                src="https://pikwizard.com/pw/small/8390a9c27654fdd710128ec3a9d0c800.jpg"
+                alt=""
+              />
+              <img
+                src="https://i.pinimg.com/originals/26/36/71/263671e8474b286effee5331484ad52a.jpg"
+                alt=""
+              />
+              <div class="count">
+                <p>12+</p>
+              </div>
+              <div class="chat">
+                <span class="material-symbols-outlined"> 3p </span>
+                <p>15</p>
+              </div>
+              <button onclick="openModal()">
+                <span class="material-symbols-outlined"> attach_file </span>
+
+                <p class="attach-files">12</p>
+              </button>
+              <div class="date">
+                <span class="material-symbols-outlined"> calendar_month </span>
+                <p>30/12/2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="profile-elements">
+            <div class="profile">
+              <img
+                src="https://pikwizard.com/pw/small/39573f81d4d58261e5e1ed8f1ff890f6.jpg"
+                alt=""
+              />
+              <p>John Doe</p>
+            </div>
+            <div class="profile">
+              <img
+                src="https://i.pinimg.com/originals/9f/74/53/9f74535608abc523efe3eb37a9a30a54.jpg"
+                alt=""
+              />
+              <p>Edge man</p>
+            </div>
+          </div>
+          <div class="body-element">
+            <div>
+              <span class="material-symbols-outlined"> backup_table </span>
+              <p>Lorem ipsum dolor sit amet fgfgf</p>
+            </div>
+            <div class="clipboard">
+              <span class="material-symbols-outlined"> assignment </span>
+              <p>1/2</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="footer-body">
+              <img
+                src="https://pikwizard.com/pw/small/8390a9c27654fdd710128ec3a9d0c800.jpg"
+                alt=""
+              />
+              <img
+                src="https://i.pinimg.com/originals/26/36/71/263671e8474b286effee5331484ad52a.jpg"
+                alt=""
+              />
+              <div class="count">
+                <p>12+</p>
+              </div>
+              <div class="chat">
+                <span class="material-symbols-outlined"> 3p </span>
+                <p>15</p>
+              </div>
+              <button onclick="openModal()">
+                <span class="material-symbols-outlined"> attach_file </span>
+                <p class="attach-files">12</p>
+            </button>
+              <div class="date">
+                <span class="material-symbols-outlined"> calendar_month </span>
+                <p>30/12/2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- Fourth Column -->
+      <div class="column">
+        <div class="card-header">
+          <h1 style="margin-left: 5px">Under Review</h1>
+          <h1 style="background-color: white; padding: 4px; margin-right: 5px">
+            0
+          </h1>
+        </div>
+        <div class="card-body">
+          <div class="profile-elements">
+            <div class="profile">
+              <img
+                src="https://pikwizard.com/pw/small/39573f81d4d58261e5e1ed8f1ff890f6.jpg"
+                alt=""
+              />
+              <p>John Doe</p>
+            </div>
+            <div class="profile">
+              <img
+                src="https://i.pinimg.com/originals/9f/74/53/9f74535608abc523efe3eb37a9a30a54.jpg"
+                alt=""
+              />
+              <p>Edge man</p>
+            </div>
+          </div>
+          <div class="body-element">
+            <div>
+              <span class="material-symbols-outlined"> backup_table </span>
+              <p>Lorem ipsum dolor sit amet fgfgf</p>
+            </div>
+            <div class="clipboard">
+              <span class="material-symbols-outlined"> assignment </span>
+              <p>1/2</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="footer-body">
+              <img
+                src="https://pikwizard.com/pw/small/8390a9c27654fdd710128ec3a9d0c800.jpg"
+                alt=""
+              />
+              <img
+                src="https://i.pinimg.com/originals/26/36/71/263671e8474b286effee5331484ad52a.jpg"
+                alt=""
+              />
+              <div class="count">
+                <p>12+</p>
+              </div>
+              <div class="chat">
+                <span class="material-symbols-outlined"> 3p </span>
+                <p>15</p>
+              </div>
+              <button onclick="openModal()">
+                <span class="material-symbols-outlined"> attach_file </span>
+
+                <p class="attach-files">12</p>
+              </button>
+              <div class="date">
+                <span class="material-symbols-outlined"> calendar_month </span>
+                <p>30/12/2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="profile-elements">
+            <div class="profile">
+              <img
+                src="https://pikwizard.com/pw/small/39573f81d4d58261e5e1ed8f1ff890f6.jpg"
+                alt=""
+              />
+              <p>John Doe</p>
+            </div>
+            <div class="profile">
+              <img
+                src="https://i.pinimg.com/originals/9f/74/53/9f74535608abc523efe3eb37a9a30a54.jpg"
+                alt=""
+              />
+              <p>Edge man</p>
+            </div>
+          </div>
+          <div class="body-element">
+            <div>
+              <span class="material-symbols-outlined"> backup_table </span>
+              <p>Lorem ipsum dolor sit amet fgfgf</p>
+            </div>
+            <div class="clipboard">
+              <span class="material-symbols-outlined"> assignment </span>
+              <p>1/2</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="footer-body">
+              <img
+                src="https://pikwizard.com/pw/small/8390a9c27654fdd710128ec3a9d0c800.jpg"
+                alt=""
+              />
+              <img
+                src="https://i.pinimg.com/originals/26/36/71/263671e8474b286effee5331484ad52a.jpg"
+                alt=""
+              />
+              <div class="count">
+                <p>12+</p>
+              </div>
+              <div class="chat">
+                <span class="material-symbols-outlined"> 3p </span>
+                <p>15</p>
+              </div>
+              <button onclick="openModal()">
+                <span class="material-symbols-outlined"> attach_file </span>
+
+                <p class="attach-files">12</p>
+              </button>
+              <div class="date">
+                <span class="material-symbols-outlined"> calendar_month </span>
+                <p>30/12/2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="profile-elements">
+            <div class="profile">
+              <img
+                src="https://pikwizard.com/pw/small/39573f81d4d58261e5e1ed8f1ff890f6.jpg"
+                alt=""
+              />
+              <p>John Doe</p>
+            </div>
+            <div class="profile">
+              <img
+                src="https://i.pinimg.com/originals/9f/74/53/9f74535608abc523efe3eb37a9a30a54.jpg"
+                alt=""
+              />
+              <p>Edge man</p>
+            </div>
+          </div>
+          <div class="body-element">
+            <div>
+              <span class="material-symbols-outlined"> backup_table </span>
+              <p>Lorem ipsum dolor sit amet fgfgf</p>
+            </div>
+            <div class="clipboard">
+              <span class="material-symbols-outlined"> assignment </span>
+              <p>1/2</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="footer-body">
+              <img
+                src="https://pikwizard.com/pw/small/8390a9c27654fdd710128ec3a9d0c800.jpg"
+                alt=""
+              />
+              <img
+                src="https://i.pinimg.com/originals/26/36/71/263671e8474b286effee5331484ad52a.jpg"
+                alt=""
+              />
+              <div class="count">
+                <p>12+</p>
+              </div>
+              <div class="chat">
+                <span class="material-symbols-outlined"> 3p </span>
+                <p>15</p>
+              </div>
+              <button onclick="openModal()">
+                <span class="material-symbols-outlined"> attach_file </span>
+                <p class="attach-files">12</p>
+            </button>
+              <div class="date">
+                <span class="material-symbols-outlined"> calendar_month </span>
+                <p>30/12/2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal">
+      <div id="modalContent">
+        <!-- Close button -->
+        <span id="closeBtn" onclick="closeModal()">&times;</span>
+        <!-- Upload input -->
+        <label for="fileInput">Upload File:</label>
+        <form id="add-form" enctype="multipart/form-data">
+          
+          <label for="item-files">Files:</label>
+          <input type="file" id="item-files" name="files" multiple required />
+          <button style="background-color: bisque; cursor: pointer; margin-top: 10px;" type="submit">Upload Item</button>
+        </form>
+        <!-- List item -->
+        <ul>
+          <li id="items-list">List Item 1</li>
+        </ul>
+      </div>
+    </div>
     
-</div>
-
+    <script src="index.js"></script>
 </body>
 </html>
