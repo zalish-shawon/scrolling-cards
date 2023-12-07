@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       .parent-container {
+            display: flex;
+            overflow-x: auto; /* Enable horizontal scrolling for the parent container */
+            max-width: 95%; /* Allow the parent container to take the full width */
+            margin: auto;
+        }
+
+        .column {
+            flex-shrink: 0; /* Prevent columns from shrinking */
+            width: 300px; /* Adjust the width as needed */
+            margin-right: 20px; /* Adjust the margin between columns as needed */
+            overflow-y: auto; /* Enable vertical scrolling for each column */
+            max-height: 100vh; /* Set a maximum height for each column */
+            background-color: aliceblue;
+            padding: 10px;
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .profile img {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+        }
+        .profile-elements {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .card-body {
+            background-color: white;
+            border-radius: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="parent-container">
+    <div class="column">
+        <!-- Content for the first column -->
+        <!-- Add your cards and content here -->
+        <div class="card-header">
+            <h1>Incomplete</h1>
+            <h1>0</h1>
+        </div>
+        <div class="card-body">
+            <div class="profile-elements">
+                    <div class="profile">
+                        <img src="https://pikwizard.com/pw/small/39573f81d4d58261e5e1ed8f1ff890f6.jpg" alt="">
+                        <p>John Doe</p>
+                    </div>
+                    <div class="profile">
+                        <img src="https://i.pinimg.com/originals/9f/74/53/9f74535608abc523efe3eb37a9a30a54.jpg" alt="">
+                        <p> Edge man</p>    
+                    </div>
+            </div>
+
+        </div>
+    </div>
+    
+</div>
+
+</body>
+</html>
