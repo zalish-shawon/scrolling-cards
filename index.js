@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   
     // Fetch data from the server and update the UI
     const fetchData = async () => {
-        const response = await fetch('http://localhost:5000/files');
+        const response = await fetch('https://scrolling-card-server.vercel.app/files');
         const data = await response.json();
         let totalAttachData = 0;
    
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }).join('');
       
 
-      const totalFilesResponse = await fetch('http://localhost:5000/totalFiles');
+      const totalFilesResponse = await fetch('https://scrolling-card-server.vercel.app/totalFiles');
     const totalFilesData = await totalFilesResponse.json();
 
     // Update total files information in all elements with the class "attachItems"
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
 
   
-      await fetch('http://localhost:5000/files', {
+      await fetch('https://scrolling-card-server.vercel.app/files', {
         method: 'POST',
         body: formData,
       })
